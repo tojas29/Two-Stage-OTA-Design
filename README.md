@@ -1,7 +1,8 @@
-# Course Project EE206: Analog Circuits {Two-Stage OTA Design (TSMC 180nm CMOS, LTspice)} 
+# Course Project EE206: Analog Circuits {Two-Stage OTA Design (TSMC180nm CMOS, LTspice)} 
 **Author:** Ojas Thete (ID: 230108034)
 
 ## Problem Statement
+
 Design a two-stage operational transconductance amplifier (OTA) using **TSMC 180nm technology** with the following specifications:
 
 - OTA should be used in a **non-inverting amplifier** configuration with a **closed-loop gain of 2**.
@@ -16,33 +17,34 @@ All simulations are performed in **LTspice**, and manual calculations were used 
 ## 📁 Files Included
 
 ### 📄 Design Files
-- [cite_start]`230108034_OJAS_THETE.asc`: LTspice schematic file containing the Two-Stage Miller Compensated OTA design[cite: 172].
+- `230108034_OTA_Design.asc`: LTspice schematic file featuring the Miller-compensated Two-Stage OTA.
+- `tsmc018.lib`: The TSMC 180nm CMOS library file required to run the simulation.
 
 ### 📄 Documentation
-- `Report_230108034.pdf`: Full technical report detailing:
-  - [cite_start]Initial design assumptions and DC biasing[cite: 303, 304].
-  - [cite_start]Hand calculations for $(\frac{W}{L})$ ratios of M1–M7[cite: 313].
-  - [cite_start]Frequency response analysis (Gain and Phase Margin)[cite: 239].
-  - [cite_start]Transient response for a $0.2V$ step input[cite: 289].
+- `Report_230108034.pdf`: Full technical report containing:
+  - Detailed design procedure and DC biasing point analysis.
+  - Hand calculations for MOSFET sizing (W/L).
+  - Frequency response analysis (Gain, Phase Margin, and Bandwidth).
+  - Observations from transient simulations.
 
 ---
 
 ## Technology & Tools
-- [cite_start]**LTspice** for circuit simulation and verification[cite: 172].
-- [cite_start]**TSMC 180nm CMOS** library (`tsmc018.lib`)[cite: 172, 175].
-- [cite_start]**Analog CMOS Design** principles (Miller compensation, pole splitting)[cite: 219, 226].
+- **LTspice** for high-fidelity circuit simulation.
+- **TSMC 180nm CMOS** design assumptions.
+- **Analog CMOS Design** principles (manual sizing, Miller compensation, and pole-splitting).
 
 ---
 
 ## Key Design Highlights
-- [cite_start]✅ **Open-loop gain**: $\approx 2000$ ($\approx 66$ dB)[cite: 213, 493].
-- [cite_start]✅ **Closed-loop gain**: $2$ (Non-inverting configuration)[cite: 214, 495].
-- [cite_start]✅ **Phase margin**: $60.6^\circ$[cite: 253].
-- [cite_start]✅ **3-dB Bandwidth**: $27.88$ MHz[cite: 257].
-- [cite_start]✅ **Power Consumption**: $234 \mu W$[cite: 217].
+- ✅ **Open-loop gain**: ≈ 2000 (≈ 66 dB)
+- ✅ **Closed-loop gain**: 2 (Non-inverting configuration)
+- ✅ **Phase margin**: 60.6°
+- ✅ **3-dB Bandwidth**: 27.88 MHz
+- ✅ **Power Consumption**: 234 μW
 
 ---
 
 ## 📚 References
-- EE206: Analog Electronic Circuits, IIT Guwahati course materials.
+- EE206: Analog Electronic Circuits, Indian Institute of Technology Guwahati.
 - Behzad Razavi, *Design of Analog CMOS Integrated Circuits*.
